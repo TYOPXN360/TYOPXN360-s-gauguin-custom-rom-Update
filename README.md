@@ -6,7 +6,9 @@ TYOPXN360's gauguin custom rom Update,Come and choose!
 
 友情链接(老外类原生更新频道):
 https://t.me/mankindbroadcast
+
 https://t.me/Gauguin_Updates
+
 
 推荐类原生模块
 https://github.com/RiwiHow/FixChinaCarrier

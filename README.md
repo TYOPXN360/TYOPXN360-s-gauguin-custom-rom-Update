@@ -1,6 +1,6 @@
-TYOPXN360's gauguin custom rom Update,Come and choose!
+#TYOPXN360's gauguin custom rom Update,Come and choose!
 
-机型:Redmi Note 9 Pro(gauguin)
+##机型:Redmi Note 9 Pro(gauguin)
 
 使用设备树来自https://github.com/xiaomi-sm7225
 
@@ -16,3 +16,6 @@ https://github.com/RiwiHow/FixChinaCarrier
 
 嫌Github下载慢?复制下载链接并在github.com前面加上mirror.ghproxy.com/ 即可!
 如mirror.ghproxy.com/github.com/xxx.xxx.xxx/
+
+因为大部分编译出来的rom都超过2GB,github无法上传,所以改为使用onedrive
+在此特意感谢[Anya1014](https://github.com/Anya1014CN)提供的Onedrive云盘,没有他就我就不可能提供下载!!!

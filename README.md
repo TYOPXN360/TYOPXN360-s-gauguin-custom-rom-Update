@@ -4,7 +4,7 @@
 
 使用设备树来自https://github.com/xiaomi-sm7225
 
-友情链接(老外类原生更新频道):
+友情链接(老外类原生更新频道):  
 https://t.me/mankindbroadcast  
 https://t.me/Gauguin_Updates  
 推荐类原生模块

@@ -2,6 +2,7 @@
 ## 机型:Redmi Note 9 Pro(gauguin)
 ### 在此特意感谢[Anya1014](https://github.com/Anya1014CN)提供的Onedrive云盘和alist网盘,没有他就我就不可能提供下载!!!
 使用设备树来自https://github.com/xiaomi-sm7225  
+https://github.com/PixelOS-Devices/device_xiaomi_gauguin  
 友情链接(老外类原生更新频道):  
 https://t.me/mankindbroadcast  
 https://t.me/Gauguin_Updates  

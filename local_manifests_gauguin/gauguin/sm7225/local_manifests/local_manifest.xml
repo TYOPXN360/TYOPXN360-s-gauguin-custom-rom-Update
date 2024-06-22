@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- 设备树 -->
+  <project name="xiaomi-sm7225/android_device_xiaomi_gauguin" path="device/xiaomi/gauguin" remote="github" revision="lineage-21" />
+  <!-- 内核树 -->
+  <project name="xiaomi-sm7225/android_kernel_xiaomi_gauguin" path="kernel/xiaomi/gauguin" remote="github" revision="lineage-21" />
+  <!-- Vendor树 -->
+  <project name="xiaomi-sm7225/proprietary_vendor_xiaomi_gauguin" path="vendor/xiaomi/gauguin" remote="github" revision="lineage-21" />
+  <!-- Hardware树 -->
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-21" />
+</manifest>

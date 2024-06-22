@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device树 -->
+  <project name="PixelOS-Devices/device_xiaomi_gauguin" path="device/xiaomi/gauguin" remote="github" revision="fourteen" />
+  <!-- kernel树 -->
+  <project name="PixelOS-Devices/kernel_xiaomi_gauguin" path="kernel/xiaomi/gauguin" remote="github" revision="fourteen" />
+  <!-- Vendor树 -->
+  <project name="PixelOS-Devices/vendor_xiaomi_gauguin" path="vendor/xiaomi/gauguin" remote="github" revision="fourteen" />
+  <!-- Hardware树 -->
+  <project name="PixelOS-AOSP/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="fourteen" />
+</manifest>

@@ -1,173 +1,179 @@
-[ 20% 33590/165105] //device/xiaomi/chopin/parts:XiaomiParts javac [common] (pri
-FAILED: out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_
-common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/XiaomiParts.jar out/soong/.interme
-diates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650
-c68e8a26b3dd4/javac/anno.srcjar
-rm -rf "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_
-common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/classes" "out/soong/.intermediates
-/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a
-26b3dd4/javac/anno" "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiP
-arts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/anno.srcjar.tmp" "out
-/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f
-09fcc0b17bc4650c68e8a26b3dd4/javac/srcjars" "out/soong/.intermediates/device/xia
-omi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/jav
-ac/XiaomiParts.jar.tmp" && mkdir -p "out/soong/.intermediates/device/xiaomi/chop
-in/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/class
-es" "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_com
-mon/737f09fcc0b17bc4650c68e8a26b3dd4/javac/anno" "out/soong/.intermediates/devic
-e/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd
-4/javac/srcjars" && out/host/linux-x86/bin/zipsync -d out/soong/.intermediates/d
-evice/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26
-b3dd4/javac/srcjars -l out/soong/.intermediates/device/xiaomi/chopin/parts/Xiaom
-iParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/srcjars/list -f "*.
-java" out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_co
-mmon/737f09fcc0b17bc4650c68e8a26b3dd4/gen/android/R.srcjar && (if [ -s out/soong
-/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0
-b17bc4650c68e8a26b3dd4/javac/srcjars/list ] || [ -s out/soong/.intermediates/dev
-ice/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3
-dd4/javac/XiaomiParts.jar.rsp ] ; then out/host/linux-x86/bin/soong_javac_wrappe
-r prebuilts/jdk/jdk17/linux-x86/bin/javac -J-Xmx4096M -J-XX:OnError="cat hs_err_
-pid%p.log" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J-XX:+Tie
-redCompilation -J-XX:TieredStopAtLevel=1 -Xmaxerrs 9999999 -encoding UTF-8 -sour
-cepath "" -g -XDskipDuplicateBridges=true -XDstringConcat=inline  -proc:none -g:
-source,lines -Xlint:-dep-ann --system=out/soong/.intermediates/build/soong/java/
-core-libraries/stable-core-platform-api-stubs-system-modules/android_common/syst
-em -classpath out/soong/.intermediates/frameworks/base/ext/android_common/turbin
-e-combined/ext.jar:out/soong/.intermediates/frameworks/base/framework/android_co
-mmon/e18b8e8d84cb9f664aa09a397b08c165/turbine-combined/framework.jar:out/soong/.
-intermediates/frameworks/base/framework/android_common/e18b8e8d84cb9f664aa09a397
-b08c165/repackaged-turbine-jarjar/framework.jar:out/soong/.intermediates/prebuil
-ts/sdk/current/androidx/m2repository/androidx/core/core/1.13.0-beta01/androidx.c
-ore_core/android_common/turbine-combined/androidx.core_core.jar:out/soong/.inter
-mediates/prebuilts/sdk/current/androidx/m2repository/androidx/preference/prefere
-nce/1.3.0-alpha01/androidx.preference_preference/android_common/e18b8e8d84cb9f66
-4aa09a397b08c165/turbine-combined/androidx.preference_preference.jar:out/soong/.
-intermediates/packages/resources/devicesettings/org.lineageos.settings.resources
-/android_common/e18b8e8d84cb9f664aa09a397b08c165/turbine-combined/org.lineageos.
-settings.resources.jar:out/soong/.intermediates/frameworks/base/packages/Setting
-sLib/SettingsLib/android_common/e18b8e8d84cb9f664aa09a397b08c165/turbine-combine
-d/SettingsLib.jar -source 17 -target 17 -d out/soong/.intermediates/device/xiaom
-i/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac
-/classes -s out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/andr
-oid_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/anno @out/soong/.intermediates
-/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a
-26b3dd4/javac/XiaomiParts.jar.rsp @out/soong/.intermediates/device/xiaomi/chopin
-/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/srcjars
-/list ; fi ) && out/host/linux-x86/bin/soong_zip -jar -o out/soong/.intermediate
-s/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8
-a26b3dd4/javac/anno.srcjar.tmp -C out/soong/.intermediates/device/xiaomi/chopin/
-parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/anno -D 
-out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/7
-37f09fcc0b17bc4650c68e8a26b3dd4/javac/anno && out/host/linux-x86/bin/soong_zip -
-jar -o out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_c
-ommon/737f09fcc0b17bc4650c68e8a26b3dd4/javac/XiaomiParts.jar.tmp -C out/soong/.i
-ntermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17
-bc4650c68e8a26b3dd4/javac/classes -D out/soong/.intermediates/device/xiaomi/chop
-in/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/class
-es && if ! cmp -s "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiPar
-ts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/XiaomiParts.jar.tmp" "o
-ut/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/73
-7f09fcc0b17bc4650c68e8a26b3dd4/javac/XiaomiParts.jar"; then mv "out/soong/.inter
-mediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc46
-50c68e8a26b3dd4/javac/XiaomiParts.jar.tmp" "out/soong/.intermediates/device/xiao
-mi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/java
-c/XiaomiParts.jar"; fi && if ! cmp -s "out/soong/.intermediates/device/xiaomi/ch
-opin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/ann
-o.srcjar.tmp" "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/a
-ndroid_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/anno.srcjar"; then mv "out/
-soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_common/737f0
-9fcc0b17bc4650c68e8a26b3dd4/javac/anno.srcjar.tmp" "out/soong/.intermediates/dev
-ice/xiaomi/chopin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3
-dd4/javac/anno.srcjar"; fi && rm -rf "out/soong/.intermediates/device/xiaomi/cho
-pin/parts/XiaomiParts/android_common/737f09fcc0b17bc4650c68e8a26b3dd4/javac/srcj
-ars" "out/soong/.intermediates/device/xiaomi/chopin/parts/XiaomiParts/android_co
-mmon/737f09fcc0b17bc4650c68e8a26b3dd4/javac/classes"
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracActivity.java:2
-2: 错误: 找不到符号
-import com.android.settingslib.widget.R;
-                                     ^
-  符号:   类 R
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracSettingsFragmen
-t.java:29: 错误: 找不到符号
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
-                                     ^
-  符号:   类 OnMainSwitchChangeListener
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracSettingsFragmen
-t.java:34: 错误: 找不到符号
-        OnPreferenceChangeListener, OnMainSwitchChangeListener {
-                                    ^
-  符号: 类 OnMainSwitchChangeListener
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsActivity.
-java:22: 错误: 找不到符号
-import com.android.settingslib.widget.R;
-                                     ^
-  符号:   类 R
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsFragment.
-java:37: 错误: 找不到符号
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
-                                     ^
-  符号:   类 OnMainSwitchChangeListener
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsFragment.
-java:42: 错误: 找不到符号
-        OnMainSwitchChangeListener {
-        ^
-  符号: 类 OnMainSwitchChangeListener
-device/xiaomi/chopin/parts/src/org/lineageos/settings/refreshrate/RefreshActivit
-y.java:23: 错误: 找不到符号
-import com.android.settingslib.widget.R;
-                                     ^
-  符号:   类 R
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/speaker/ClearSpeakerActivi
-ty.java:23: 错误: 找不到符号
-import com.android.settingslib.widget.R;
-                                     ^
-  符号:   类 R
-  位置: 程序包 com.android.settingslib.widget
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracActivity.java:3
-2: 错误: 程序包R不存在
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                                                         ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracSettingsFragmen
-t.java:57: 错误: 不兼容的类型: DiracSettingsFragment无法转换为OnCheckedChangeLis
-tener
-        mSwitchBar.addOnSwitchChangeListener(this);
-                                             ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/dirac/DiracSettingsFragmen
-t.java:103: 错误: 方法不会覆盖或实现超类型的方法
-    @Override
-    ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsActivity.
-java:32: 错误: 程序包R不存在
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                                                         ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsFragment.
-java:66: 错误: 不兼容的类型: DozeSettingsFragment无法转换为OnCheckedChangeListen
-er
-        mSwitchBar.addOnSwitchChangeListener(this);
-                                             ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/doze/DozeSettingsFragment.
-java:116: 错误: 方法不会覆盖或实现超类型的方法
-    @Override
-    ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/refreshrate/RefreshActivit
-y.java:33: 错误: 程序包R不存在
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                                                         ^
-device/xiaomi/chopin/parts/src/org/lineageos/settings/speaker/ClearSpeakerActivi
-ty.java:32: 错误: 程序包R不存在
-                .replace(R.id.content_frame,  new ClearSpeakerFragment())
-                          ^
-注: 某些输入文件使用或覆盖了已过时的 API。
-注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
-16 个错误
-10:54:30 ninja failed with: exit status 1
-There were 8 actions that completed after the action that failed. See verbose.lo
-g.gz for their output.
+FAILED: out/soong/.intermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-mtkimpl/android_recovery_arm
+64_armv8-a_shared/4c2ce122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-impl-1.1-mtkimpl.so
+prebuilts/clang/host/linux-x86/clang-r510928/bin/clang++ out/soong/.intermediates/bionic/libc/crtbegin_so/android_rec
+overy_arm64_armv8-a/crtbegin_so.o @'out/soong/.intermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-
+mtkimpl/android_recovery_arm64_armv8-a_shared/4c2ce122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-i
+mpl-1.1-mtkimpl.so'.rsp out/soong/.intermediates/bionic/libc/crtend_so/android_recovery_arm64_armv8-a/crtend_so.o out
+/soong/.intermediates/bionic/libc/crt_pad_segment/android_recovery_arm64_armv8-a/crt_pad_segment.o -o 'out/soong/.int
+ermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-mtkimpl/android_recovery_arm64_armv8-a_shared/4c2c
+e122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-impl-1.1-mtkimpl.so' -target aarch64-linux-android1
+0000 -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--fatal-warnings -Wl,--no-undefined-version -W
+l,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_stripped.a -Wl,--exclude-libs,libunwind_llvm.a -Wl,--exclude-libs
+,libunwind.a -fuse-ld=lld -Wl,--icf=safe -Wl,--no-demangle -Wl,--compress-debug-sections=zstd -Wl,--pack-dyn-relocs=a
+ndroid+relr -Wl,--no-undefined -Wl,--hash-style=gnu -Wl,-z,separate-code -Wl,-z,max-page-size=4096   -nostdlib -Wl,--
+gc-sections -shared -Wl,-soname,android.hardware.boot@1.0-impl-1.1-mtkimpl.so -flto=thin -fsplit-lto-unit -Wl,--lto-O
+0 -Wl,-plugin-opt,-import-instr-limit=5 -Wl,-mllvm,-regalloc-enable-advisor=release -Wl,--exclude-libs=libclang_rt.bu
+iltins-aarch64-android.a -Wl,--exclude-libs=libclang_rt.ubsan_minimal-aarch64-android.a 
+ld.lld: error: undefined symbol: _ZN7android4base9ShouldLogENS0_11LogSeverityEPKc
+>>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by BootControl.cpp:67 (device/xiaomi/chopin/bootctrl/BootControl.cpp:67)
+>>>               lto.tmp:(_ZN7android8hardware4boot4V1_114implementation11BootControl16clearAvbbctlFlagEv)
+>>> referenced 57 more times
 
-#### failed to build some targets (01:00:19 (hh:mm:ss)) ####
+ld.lld: error: undefined symbol: _ZN7android4base10LogMessageC1EPKcjNS0_11LogSeverityES3_i
+>>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by libboot_control.cpp:83 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:83)
+>>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
+NS1_9allocatorIcEEEEP18bootloader_control)
+>>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced 54 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base9ReadFullyENS0_11borrowed_fdEPvm
+>>> referenced by libboot_control.cpp:90 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:90)
+>>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
+NS1_9allocatorIcEEEEP18bootloader_control)
+>>> referenced by bootloader_message.cpp:107 (bootable/recovery/bootloader_message/bootloader_message.cpp:107)
+>>>               lto.tmp:(_ZL19read_misc_partitionPvmRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcE
+EEEmPS6_)
+
+ld.lld: error: undefined symbol: _ZN7android4base10LogMessage6streamEv
+>>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by libboot_control.cpp:83 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:83)
+>>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
+NS1_9allocatorIcEEEEP18bootloader_control)
+>>> referenced 54 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base10LogMessageD1Ev
+>>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
+>>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
+>>> referenced by boot_config.cpp:46 (system/core/fs_mgr/libfstab/boot_config.cpp:46)
+>>>               lto.tmp:(_ZZN7android6fs_mgr15GetAndroidDtDirEvENK3$_0clEv)
+>>> referenced 35 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base10WriteFullyENS0_11borrowed_fdEPKvm
+>>> referenced by bootloader_message.cpp:128 (bootable/recovery/bootloader_message/bootloader_message.cpp:128)
+>>>               lto.tmp:(_Z20write_misc_partitionPKvmRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIc
+EEEEmPS7_)
+>>> referenced by libboot_control.cpp:108 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:108)
+>>>               lto.tmp:(_ZN7android8bootable30UpdateAndSaveBootloaderControlERKNSt3__112basic_stringIcNS1_11char_t
+raitsIcEENS1_9allocatorIcEEEEP18bootloader_control)
+
+ld.lld: error: undefined symbol: _ZN7android4base12StringPrintfEPKcz
+>>> referenced by bootloader_message.cpp:0 (bootable/recovery/bootloader_message/bootloader_message.cpp:0)
+>>>               lto.tmp:(_Z20write_misc_partitionPKvmRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIc
+EEEEmPS7_)
+>>> referenced by bootloader_message.cpp:79 (bootable/recovery/bootloader_message/bootloader_message.cpp:79)
+>>>               lto.tmp:(_ZL15wait_for_deviceRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPS5_)
+>>> referenced by bootloader_message.cpp:86 (bootable/recovery/bootloader_message/bootloader_message.cpp:86)
+>>>               lto.tmp:(_ZL15wait_for_deviceRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPS5_)
+>>> referenced 8 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base5SplitERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorI
+cEEEES9_
+>>> referenced by boot_config.cpp:54 (system/core/fs_mgr/libfstab/boot_config.cpp:54)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+>>> referenced by fstab.cpp:546 (system/core/fs_mgr/libfstab/fstab.cpp:546)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+>>> referenced by fstab.cpp:123 (system/core/fs_mgr/libfstab/fstab.cpp:123)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+>>> referenced 7 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base4TrimINSt3__117basic_string_viewIcNS2_11char_traitsIcEEEEEENS2_12bas
+ic_stringIcS5_NS2_9allocatorIcEEEEOT_
+>>> referenced by boot_config.cpp:56 (system/core/fs_mgr/libfstab/boot_config.cpp:56)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+>>> referenced by boot_config.cpp:62 (system/core/fs_mgr/libfstab/boot_config.cpp:62)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base8TokenizeERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocat
+orIcEEEES9_
+>>> referenced by fstab.cpp:547 (system/core/fs_mgr/libfstab/fstab.cpp:547)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base10StartsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEEc
+>>> referenced by fstab.cpp:550 (system/core/fs_mgr/libfstab/fstab.cpp:550)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base9HexStringEPKvm
+>>> referenced by bootloader_message.cpp:354 (bootable/recovery/bootloader_message/bootloader_message.cpp:354)
+>>>               lto.tmp:(_Z29CheckReservedSystemSpaceEmptyPbPNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9alloc
+atorIcEEEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base10StartsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_
+>>> referenced by fstab.cpp:133 (system/core/fs_mgr/libfstab/fstab.cpp:133)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+>>> referenced by strings.h:133 (system/libbase/include/android-base/strings.h:133)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+>>> referenced by fstab.cpp:141 (system/core/fs_mgr/libfstab/fstab.cpp:141)
+>>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
+>>> referenced 25 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base8EndsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_
+>>> referenced by strings.h:141 (system/libbase/include/android-base/strings.h:141)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+>>> referenced by fstab.cpp:600 (system/core/fs_mgr/libfstab/fstab.cpp:600)
+>>>               lto.tmp:(_ZN7android6fs_mgr20TransformFstabForDsuEPNSt3__16vectorINS0_10FstabEntryENS1_9allocatorIS
+3_EEEERKNS1_12basic_stringIcNS1_11char_traitsIcEENS4_IcEEEERKNS2_ISC_NS4_ISC_EEEE)
+>>> referenced by strings.h:141 (system/libbase/include/android-base/strings.h:141)
+>>>               lto.tmp:(_ZN7android6fs_mgr14GetBootDevicesEv)
+
+ld.lld: error: undefined symbol: _ZN7android4base13StringReplaceENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES
+5_S5_b
+>>> referenced by boot_config.cpp:79 (system/core/fs_mgr/libfstab/boot_config.cpp:79)
+>>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
+cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base11GetPropertyERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9all
+ocatorIcEEEES9_
+>>> referenced by libboot_control.cpp:201 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:201)
+>>>               lto.tmp:(_ZN7android8bootable11BootControl4InitEv)
+>>> referenced by boot_config.cpp:188 (system/core/fs_mgr/libfstab/boot_config.cpp:188)
+>>>               lto.tmp:(_Z22fs_mgr_get_boot_configRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+PS5_)
+
+ld.lld: error: undefined symbol: _ZN7android4base16ReadFileToStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
+_9allocatorIcEEEEPS7_b
+>>> referenced by boot_config.cpp:101 (system/core/fs_mgr/libfstab/boot_config.cpp:101)
+>>>               lto.tmp:(_ZN7android6fs_mgr16ImportBootconfigERKNSt3__18functionIFvNS1_12basic_stringIcNS1_11char_t
+raitsIcEENS1_9allocatorIcEEEES8_EEE)
+>>> referenced by boot_config.cpp:107 (system/core/fs_mgr/libfstab/boot_config.cpp:107)
+>>>               lto.tmp:(_ZN7android6fs_mgr13GetBootconfigERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9alloc
+atorIcEEEEPS7_)
+>>> referenced by boot_config.cpp:157 (system/core/fs_mgr/libfstab/boot_config.cpp:157)
+>>>               lto.tmp:(_ZN7android6fs_mgr19ImportKernelCmdlineERKNSt3__18functionIFvNS1_12basic_stringIcNS1_11cha
+r_traitsIcEENS1_9allocatorIcEEEES8_EEE)
+>>> referenced 17 more times
+
+ld.lld: error: undefined symbol: _ZN7android4base14GetIntPropertyIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEE
+NS3_9allocatorIcEEEES2_S2_S2_
+>>> referenced by fstab.cpp:681 (system/core/fs_mgr/libfstab/fstab.cpp:681)
+>>>               lto.tmp:(_ZN7android6fs_mgr20EnableMandatoryFlagsEPNSt3__16vectorINS0_10FstabEntryENS1_9allocatorIS
+3_EEEE)
+
+ld.lld: error: undefined symbol: _ZN7android4base8BasenameENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE
+>>> referenced by fstab.cpp:917 (system/core/fs_mgr/libfstab/fstab.cpp:917)
+>>>               lto.tmp:(_ZN7android6fs_mgr19GetVerityDeviceNameERKNS0_10FstabEntryE)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+00:32:25 ninja failed with: exit status 1
+There were 2 actions that completed after the action that failed. See verbose.log.gz for their output.

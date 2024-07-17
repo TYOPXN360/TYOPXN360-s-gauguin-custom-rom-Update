@@ -1,179 +1,295 @@
-FAILED: out/soong/.intermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-mtkimpl/android_recovery_arm
-64_armv8-a_shared/4c2ce122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-impl-1.1-mtkimpl.so
-prebuilts/clang/host/linux-x86/clang-r510928/bin/clang++ out/soong/.intermediates/bionic/libc/crtbegin_so/android_rec
-overy_arm64_armv8-a/crtbegin_so.o @'out/soong/.intermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-
-mtkimpl/android_recovery_arm64_armv8-a_shared/4c2ce122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-i
-mpl-1.1-mtkimpl.so'.rsp out/soong/.intermediates/bionic/libc/crtend_so/android_recovery_arm64_armv8-a/crtend_so.o out
-/soong/.intermediates/bionic/libc/crt_pad_segment/android_recovery_arm64_armv8-a/crt_pad_segment.o -o 'out/soong/.int
-ermediates/device/xiaomi/chopin/bootctrl/android.hardware.boot@1.1-mtkimpl/android_recovery_arm64_armv8-a_shared/4c2c
-e122f611b1d3e299ee17f19baa40/unstripped/android.hardware.boot@1.0-impl-1.1-mtkimpl.so' -target aarch64-linux-android1
-0000 -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=md5 -Wl,--fatal-warnings -Wl,--no-undefined-version -W
-l,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_stripped.a -Wl,--exclude-libs,libunwind_llvm.a -Wl,--exclude-libs
-,libunwind.a -fuse-ld=lld -Wl,--icf=safe -Wl,--no-demangle -Wl,--compress-debug-sections=zstd -Wl,--pack-dyn-relocs=a
-ndroid+relr -Wl,--no-undefined -Wl,--hash-style=gnu -Wl,-z,separate-code -Wl,-z,max-page-size=4096   -nostdlib -Wl,--
-gc-sections -shared -Wl,-soname,android.hardware.boot@1.0-impl-1.1-mtkimpl.so -flto=thin -fsplit-lto-unit -Wl,--lto-O
-0 -Wl,-plugin-opt,-import-instr-limit=5 -Wl,-mllvm,-regalloc-enable-advisor=release -Wl,--exclude-libs=libclang_rt.bu
-iltins-aarch64-android.a -Wl,--exclude-libs=libclang_rt.ubsan_minimal-aarch64-android.a 
-ld.lld: error: undefined symbol: _ZN7android4base9ShouldLogENS0_11LogSeverityEPKc
->>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by BootControl.cpp:67 (device/xiaomi/chopin/bootctrl/BootControl.cpp:67)
->>>               lto.tmp:(_ZN7android8hardware4boot4V1_114implementation11BootControl16clearAvbbctlFlagEv)
->>> referenced 57 more times
+FAILED: Package OTA: out/target/product/chopin/lineage_chopin-ota-eng.nobody.zip
+Outputs: out/target/product/chopin/lineage_chopin-ota-eng.nobody.zip out/target/product/chopin/ota_metadata
+Error: exited with code: 1
+Command: /bin/bash -c "PATH=out/host/linux-x86/bin/:system/extras/ext4_utils/:out/host/linux-x86/bin/:\$PATH out/host/linux-x86/bin/ota_from_target_files --verbose --extracted_input_target_files out/target/product/chopin/obj/PACKAGING/target_files_intermediates/lineage_chopin-target_files-eng.nobody --path out/host/linux-x86 --backup=true  -k build/make/target/product/security/testkey --output_metadata_path out/target/product/chopin/ota_metadata out/target/product/chopin/obj/PACKAGING/target_files_intermediates/lineage_chopin-target_files-eng.nobody.zip out/target/product/chopin/lineage_chopin-ota-eng.nobody.zip"
+Output:
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read SYSTEM/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read VENDOR/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read ODM/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read ODM/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read build.prop for partition odm
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read VENDOR_DLKM/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read VENDOR_DLKM/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read build.prop for partition vendor_dlkm
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read ODM_DLKM/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read ODM_DLKM/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read build.prop for partition odm_dlkm
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read SYSTEM_DLKM/etc/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read SYSTEM_DLKM/build.prop
+2024-07-18 04:47:38 - common.py - WARNING : Failed to read build.prop for partition system_dlkm
+2024-07-18 04:47:38 - common.py - INFO    :   Running: "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/unpack_bootimg --boot_img out/target/product/chopin/obj/PACKAGING/target_files_intermediates/lineage_chopin-target_files-eng.nobody/IMAGES/boot.img --out /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/boot_xm9rsgdp.img"
+2024-07-18 04:47:38 - common.py - INFO    :   Running: "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/minigzip -d"
+2024-07-18 04:47:39 - common.py - INFO    :   Running: "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/toybox cpio -F /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/boot_xm9rsgdp.img/uncompressed_ramdisk -i"
+2024-07-18 04:47:39 - common.py - WARNING : Failed to read IMAGES/init_boot.img
+2024-07-18 04:47:40 - ota_from_target_files.py - INFO    : --- target info ---
+2024-07-18 04:47:40 - common.py - INFO    : ab_partitions             = (list) ['boot', 'dtbo', 'product', 'system', 'system_ext', 'vbmeta', 'vbmeta_system', 'vbmeta_vendor', 'vendor', '']
+2024-07-18 04:47:40 - common.py - INFO    : ab_update                 = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_avbtool               = (str) avbtool
+2024-07-18 04:47:40 - common.py - INFO    : avb_boot_add_hash_footer_args = (str) --prop com.android.build.boot.os_version:13 --prop com.android.build.boot.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_boot_salt             = (str) a87dfcb943f8a1042cc6a3aafcc7ed410745d7caa705d64f939db7ec753408d3
+2024-07-18 04:47:40 - common.py - INFO    : avb_building_vbmeta_image = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_dtbo_add_hash_footer_args = (str) --prop com.android.build.dtbo.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_enable                = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_init_boot_add_hash_footer_args = (str) --prop com.android.build.init_boot.os_version:13 --prop com.android.build.init_boot.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_init_boot_salt        = (str) f091dbcdc3afe84c194c186a65efa25172ddffbc0476465aa26f254b1661671f
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_add_hashtree_footer_args = (str) --prop com.android.build.odm.os_version:13 --prop com.android.build.odm.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_dlkm_add_hashtree_footer_args = (str) --prop com.android.build.odm_dlkm.os_version:13 --prop com.android.build.odm_dlkm.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_dlkm_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_dlkm_salt         = (str) f091dbcdc3afe84c194c186a65efa25172ddffbc0476465aa26f254b1661671f
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_hashtree_enable   = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_odm_salt              = (str) f091dbcdc3afe84c194c186a65efa25172ddffbc0476465aa26f254b1661671f
+2024-07-18 04:47:40 - common.py - INFO    : avb_product_add_hashtree_footer_args = (str) --prop com.android.build.product.os_version:13 --prop com.android.build.product.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys --prop com.android.build.product.security_patch:2024-06-05
+2024-07-18 04:47:40 - common.py - INFO    : avb_product_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_product_salt          = (str) a87dfcb943f8a1042cc6a3aafcc7ed410745d7caa705d64f939db7ec753408d3
+2024-07-18 04:47:40 - common.py - INFO    : avb_recovery_add_hash_footer_args = (str) --prop com.android.build.recovery.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_recovery_algorithm    = (str) SHA256_RSA2048
+2024-07-18 04:47:40 - common.py - INFO    : avb_recovery_key_path     = (str) external/avb/test/data/testkey_rsa2048.pem
+2024-07-18 04:47:40 - common.py - INFO    : avb_recovery_rollback_index_location = (str) 3
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_add_hashtree_footer_args = (str) --prop com.android.build.system.os_version:13 --prop com.android.build.system.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys --prop com.android.build.system.security_patch:2024-06-05
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_dlkm_add_hashtree_footer_args = (str) --prop com.android.build.system_dlkm.os_version:13 --prop com.android.build.system_dlkm.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_dlkm_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_dlkm_salt      = (str) f091dbcdc3afe84c194c186a65efa25172ddffbc0476465aa26f254b1661671f
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_ext_add_hashtree_footer_args = (str) --prop com.android.build.system_ext.os_version:13 --prop com.android.build.system_ext.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys --prop com.android.build.system_ext.security_patch:2024-06-05
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_ext_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_ext_salt       = (str) a87dfcb943f8a1042cc6a3aafcc7ed410745d7caa705d64f939db7ec753408d3
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_other_add_hashtree_footer_args = (str) 
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_other_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_system_salt           = (str) a87dfcb943f8a1042cc6a3aafcc7ed410745d7caa705d64f939db7ec753408d3
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_algorithm      = (str) SHA256_RSA4096
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_args           = (str) --padding_size 4096
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_key_path       = (str) external/avb/test/data/testkey_rsa4096.pem
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_system         = (str) product system
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_system_algorithm = (str) SHA256_RSA2048
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_system_args    = (str) --padding_size 4096 --rollback_index 1717545600
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_system_key_path = (str) external/avb/test/data/testkey_rsa2048.pem
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_system_rollback_index_location = (str) 2
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_vendor         = (str) vendor
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_vendor_algorithm = (str) SHA256_RSA2048
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_vendor_args    = (str) --padding_size 4096 --rollback_index 1717545600
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_vendor_key_path = (str) external/avb/test/data/testkey_rsa2048.pem
+2024-07-18 04:47:40 - common.py - INFO    : avb_vbmeta_vendor_rollback_index_location = (str) 4
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_add_hashtree_footer_args = (str) --prop com.android.build.vendor.os_version:13 --prop com.android.build.vendor.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_boot_add_hash_footer_args = (str) --prop com.android.build.vendor_boot.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_dlkm_add_hashtree_footer_args = (str) --prop com.android.build.vendor_dlkm.os_version:13 --prop com.android.build.vendor_dlkm.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_dlkm_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_dlkm_salt      = (str) f091dbcdc3afe84c194c186a65efa25172ddffbc0476465aa26f254b1661671f
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_hashtree_enable = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_kernel_boot_add_hash_footer_args = (str) --prop com.android.build.vendor_kernel_boot.fingerprint:Redmi/lineage_chopin/chopin:13/TQ3A.230901.001/nobody07180353:userdebug/release-keys
+2024-07-18 04:47:40 - common.py - INFO    : avb_vendor_salt           = (str) a87dfcb943f8a1042cc6a3aafcc7ed410745d7caa705d64f939db7ec753408d3
+2024-07-18 04:47:40 - common.py - INFO    : blockimgdiff_versions     = (str) 3,4
+2024-07-18 04:47:40 - common.py - INFO    : blocksize                 = (int) 131072
+2024-07-18 04:47:40 - common.py - INFO    : board_builds_vendorimage  = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : board_uses_vendorimage    = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : boot.build.prop           = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89de170>
+2024-07-18 04:47:40 - common.py - INFO    : boot_images               = (str) boot.img
+2024-07-18 04:47:40 - common.py - INFO    : boot_size                 = (int) 134217728
+2024-07-18 04:47:40 - common.py - INFO    : build.prop                = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df3a0>
+2024-07-18 04:47:40 - common.py - INFO    : build_super_empty_partition = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : build_type                = (str) userdebug
+2024-07-18 04:47:40 - common.py - INFO    : building_oem_image        = (str) 
+2024-07-18 04:47:40 - common.py - INFO    : building_product_image    = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : building_system_ext_image = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : building_system_image     = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : building_userdata_image   = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : building_vendor_image     = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : default_system_dev_certificate = (str) build/make/target/product/security/testkey
+2024-07-18 04:47:40 - common.py - INFO    : dtbo_size                 = (str) 33554432
+2024-07-18 04:47:40 - common.py - INFO    : dynamic_partition_list    = (str)  system_ext product vendor system
+2024-07-18 04:47:40 - common.py - INFO    : erofs_sparse_flag         = (str) -s
+2024-07-18 04:47:40 - common.py - INFO    : ext_mkuserimg             = (str) mkuserimg_mke2fs
+2024-07-18 04:47:40 - common.py - INFO    : extfs_sparse_flag         = (str) -s
+2024-07-18 04:47:40 - common.py - INFO    : extra_recovery_keys       = (str) vendor/lineage/build/target/product/security/lineage
+2024-07-18 04:47:40 - common.py - INFO    : f2fs_sparse_flag          = (str) -S
+2024-07-18 04:47:40 - common.py - INFO    : fs_type                   = (str) ext4
+2024-07-18 04:47:40 - common.py - INFO    : fstab                     = (NoneType) None
+2024-07-18 04:47:40 - common.py - INFO    : fstab_version             = (int) 2
+2024-07-18 04:47:40 - common.py - INFO    : full_recovery_image       = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : has_dtbo                  = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : include_recovery_dtbo     = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : init_boot.build.prop      = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89de9b0>
+2024-07-18 04:47:40 - common.py - INFO    : lpmake                    = (str) lpmake
+2024-07-18 04:47:40 - common.py - INFO    : mkbootimg_args            = (str) --dtb device/xiaomi/chopin-prebuilts/base/China/dtb.img --dtb_offset 0x07c08000 --ramdisk_offset 0x11088000 --tags_offset 0x07c08000 --header_version 2
+2024-07-18 04:47:40 - common.py - INFO    : mkbootimg_init_args       = (str) 
+2024-07-18 04:47:40 - common.py - INFO    : mkbootimg_version_args    = (str) --os_version 13 --os_patch_level 2024-06-05
+2024-07-18 04:47:40 - common.py - INFO    : multistage_support        = (str) 1
+2024-07-18 04:47:40 - common.py - INFO    : no_recovery               = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : odm.build.prop            = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df4f0>
+2024-07-18 04:47:40 - common.py - INFO    : odm_dlkm.build.prop       = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df430>
+2024-07-18 04:47:40 - common.py - INFO    : oem_selinux_fc            = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : ota_override_device       = (str) chopin,choping
+2024-07-18 04:47:40 - common.py - INFO    : product.build.prop        = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df490>
+2024-07-18 04:47:40 - common.py - INFO    : product_disable_sparse    = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : product_fs_type           = (str) ext4
+2024-07-18 04:47:40 - common.py - INFO    : product_selinux_fc        = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : recovery_api_version      = (int) 3
+2024-07-18 04:47:40 - common.py - INFO    : recovery_as_boot          = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : recovery_mkbootimg_args   = (str) --dtb device/xiaomi/chopin-prebuilts/base/China/dtb.img --dtb_offset 0x07c08000 --ramdisk_offset 0x11088000 --tags_offset 0x07c08000 --header_version 2
+2024-07-18 04:47:40 - common.py - INFO    : recovery_mount_options    = (str) ext4=max_batch_time=0,commit=1,data=ordered,barrier=1,errors=panic,nodelalloc
+2024-07-18 04:47:40 - common.py - INFO    : root_dir                  = (str) out/target/product/chopin/root
+2024-07-18 04:47:40 - common.py - INFO    : squashfs_sparse_flag      = (str) -s
+2024-07-18 04:47:40 - common.py - INFO    : super_block_devices       = (str) super
+2024-07-18 04:47:40 - common.py - INFO    : super_main_group_size     = (str) 9122611200
+2024-07-18 04:47:40 - common.py - INFO    : super_main_partition_list = (str)  system_ext product vendor system
+2024-07-18 04:47:40 - common.py - INFO    : super_metadata_device     = (str) super
+2024-07-18 04:47:40 - common.py - INFO    : super_partition_groups    = (str) main
+2024-07-18 04:47:40 - common.py - INFO    : super_partition_size      = (str) 9126805504
+2024-07-18 04:47:40 - common.py - INFO    : super_super_device_size   = (str) 9126805504
+2024-07-18 04:47:40 - common.py - INFO    : system.build.prop         = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df3a0>
+2024-07-18 04:47:40 - common.py - INFO    : system_disable_sparse     = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : system_dlkm.build.prop    = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89dff10>
+2024-07-18 04:47:40 - common.py - INFO    : system_ext.build.prop     = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df4c0>
+2024-07-18 04:47:40 - common.py - INFO    : system_ext_disable_sparse = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : system_ext_fs_type        = (str) ext4
+2024-07-18 04:47:40 - common.py - INFO    : system_ext_selinux_fc     = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : system_fs_type            = (str) ext4
+2024-07-18 04:47:40 - common.py - INFO    : system_selinux_fc         = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : target_flatten_apex       = (str) false
+2024-07-18 04:47:40 - common.py - INFO    : tool_extensions           = (str) device/xiaomi/chopin/releasetools
+2024-07-18 04:47:40 - common.py - INFO    : use_dynamic_partition_size = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : use_dynamic_partitions    = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : userdata_fs_type          = (str) f2fs
+2024-07-18 04:47:40 - common.py - INFO    : userdata_selinux_fc       = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : userdata_size             = (int) 115234275328
+2024-07-18 04:47:40 - common.py - INFO    : vbmeta_digest             = (str) 5ab4962c4283e8e52dd1fe6205fcc7370897dc798dffaae19b8983714bbcf3cc
+2024-07-18 04:47:40 - common.py - INFO    : vendor.build.prop         = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df460>
+2024-07-18 04:47:40 - common.py - INFO    : vendor_disable_sparse     = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : vendor_dlkm.build.prop    = (PartitionBuildProps) <common.PartitionBuildProps object at 0x7135f89df370>
+2024-07-18 04:47:40 - common.py - INFO    : vendor_fs_type            = (str) ext4
+2024-07-18 04:47:40 - common.py - INFO    : vendor_selinux_fc         = (str) out/target/product/chopin/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+2024-07-18 04:47:40 - common.py - INFO    : vintf_enforce             = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : vintf_include_empty_vendor_sku = (str) true
+2024-07-18 04:47:40 - common.py - INFO    : virtual_ab                = (str) true
+2024-07-18 04:47:40 - common.py - INFO    :   Running: "openssl pkcs8 -in build/make/target/product/security/testkey.pk8 -inform DER -nocrypt"
+2024-07-18 04:47:42 - ota_from_target_files.py - INFO    : VABC XOR Not supported, disabling
+2024-07-18 04:47:42 - check_target_files_vintf.py - INFO    : Checking VINTF compatibility target files...
+2024-07-18 04:47:42 - common.py - INFO    :   Running: "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/checkvintf --dump-file-list"
+2024-07-18 04:47:43 - common.py - INFO    :   Running: "unzip -o -q out/target/product/chopin/obj/PACKAGING/target_files_intermediates/lineage_chopin-target_files-eng.nobody.zip -d /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l SYSTEM/etc/vintf/** VENDOR/etc/vintf/** SYSTEM_EXT/etc/vintf/** VENDOR/odm/etc/** META/* */build.prop"
+2024-07-18 04:47:43 - common.py - INFO    :   Running: "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/checkvintf --check-compat --dirmap /odm:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/odm --dirmap /product:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT --dirmap /system:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM --dirmap /system_ext:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT --dirmap /vendor:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR --kernel /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_configs.txt --property ro.product.first_api_level=31 --property ro.boot.product.hardware.sku= --property ro.boot.product.vendor.sku="
+Traceback (most recent call last):
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/internal/stdlib/runpy.py", line 196, in _run_module_as_main
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/internal/stdlib/runpy.py", line 86, in _run_code
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/__main__.py", line 12, in <module>
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/internal/stdlib/runpy.py", line 196, in _run_module_as_main
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/internal/stdlib/runpy.py", line 86, in _run_code
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/ota_from_target_files.py", line 1656, in <module>
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/ota_from_target_files.py", line 1627, in main
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/ota_from_target_files.py", line 1196, in GenerateAbOtaPackage
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/check_target_files_vintf.py", line 252, in CheckVintfIfTrebleEnabled
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/check_target_files_vintf.py", line 224, in CheckVintf
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/check_target_files_vintf.py", line 202, in CheckVintfFromTargetFiles
+  File "/media/tyopxn360/Android/android/chopin/crdroid/out/host/linux-x86/bin/ota_from_target_files/check_target_files_vintf.py", line 151, in CheckVintfFromExtractedTargetFiles
+common.ExternalError: Failed to run command 'checkvintf --check-compat --dirmap /odm:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/odm --dirmap /product:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT --dirmap /system:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM --dirmap /system_ext:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT --dirmap /vendor:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR --kernel /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt:/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_configs.txt --property ro.product.first_api_level=31 --property ro.boot.product.hardware.sku= --property ro.boot.product.vendor.sku=' (exit code 65):
+stdout:Cannot parse "/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt" as kernel version, parsing as GKI kernel release.
+Cannot parse "/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt" as GKI kernel release, parsing as kernel release
+Cannot parse "/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt" as kernel release
+Cannot parse "4.14.186-g44ecbc0bcc34" as kernel version, parsing as GKI kernel release.
+Cannot parse "4.14.186-g44ecbc0bcc34" as GKI kernel release, parsing as kernel release
+Successfully parsed content of /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_version.txt: 4.14.186-g44ecbc0bcc34
+getFrameworkHalManifest: Reading VINTF information.
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/android.system.keystore2-service.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/manifest_media_c2_software.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service@2.2.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/android.system.suspend@1.0-service.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest/android.frameworks.stats@1.0-service.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/manifest.xml': NAME_NOT_FOUND
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/manifest/': NAME_NOT_FOUND
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest/': NAME_NOT_FOUND
+getDeviceHalManifest: Reading VINTF information.
+Sysprop ro.boot.product.vendor.sku=
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/etc/vintf/manifest/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/etc/vintf/manifest/android.hardware.cas@1.2-service.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/etc/vintf/manifest/bluetooth_audio.xml': OK
+Sysprop ro.boot.product.hardware.sku=
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/odm/etc/vintf/manifest.xml': NAME_NOT_FOUND
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/odm/etc/manifest.xml': NAME_NOT_FOUND
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/odm/etc/vintf/manifest/': NAME_NOT_FOUND
+getDeviceHalManifest: Successfully processed VINTF information
+getFrameworkHalManifest: Successfully processed VINTF information
+fetched kernel level from RuntimeInfo ''
+getFrameworkCompatibilityMatrix: Reading VINTF information.
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.4.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.7.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.3.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/': NAME_NOT_FOUND
+getFrameworkCompatibilityMatrix: Successfully processed VINTF information
+getDeviceCompatibilityMatrix: Reading VINTF information.
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/VENDOR/etc/vintf/compatibility_matrix.xml': OK
+getDeviceCompatibilityMatrix: Successfully processed VINTF information
+fetched kernel version 4.14.186
+read kernel configs from /media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/META/kernel_configs.txt
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.4.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.7.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.3.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/': NAME_NOT_FOUND
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.4.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.7.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.3.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/': NAME_NOT_FOUND
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.4.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/manifest.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.device.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.6.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.5.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.7.xml': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM/etc/vintf/compatibility_matrix.3.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/': OK
+Fetch '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/SYSTEM_EXT/etc/vintf/manifest.xml': OK
+List '/media/tyopxn360/Android/android/chopin/crdroid/out/soong/.temp/targetfiles-b1pbpv8l/PRODUCT/etc/vintf/': NAME_NOT_FOUND
+The following HALs in device manifest are not declared in FCM <= level 5: 
+  android.hardware.audio.effect@7.0::IEffectsFactory/default
+  android.hardware.audio@7.0::IDevicesFactory/default
+  android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default (@2)
+  android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default
+  android.hardware.tetheroffload.control@1.1::IOffloadControl/default
+  vendor.mediatek.hardware.camera.isphal@1.0::IISPModule/internal/0
+  vendor.xiaomi.hardware.citsensorservice@1.1::ICitSensorService/default
+  vendor.xiaomi.hardware.soterservice@1.0::ISoter/default
+INCOMPATIBLE
 
-ld.lld: error: undefined symbol: _ZN7android4base10LogMessageC1EPKcjNS0_11LogSeverityES3_i
->>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by libboot_control.cpp:83 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:83)
->>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
-NS1_9allocatorIcEEEEP18bootloader_control)
->>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced 54 more times
+stderr:ERROR: files are incompatible: Device manifest and framework compatibility matrix are incompatible: HALs incompatible. Matrix level = 5. Manifest level = 5. The following requirements are not met:
+android.hardware.power:
+    required: IPower/default (@1-3)
+    provided: 
 
-ld.lld: error: undefined symbol: _ZN7android4base9ReadFullyENS0_11borrowed_fdEPvm
->>> referenced by libboot_control.cpp:90 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:90)
->>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
-NS1_9allocatorIcEEEEP18bootloader_control)
->>> referenced by bootloader_message.cpp:107 (bootable/recovery/bootloader_message/bootloader_message.cpp:107)
->>>               lto.tmp:(_ZL19read_misc_partitionPvmRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcE
-EEEmPS6_)
+android.hardware.boot@1.0::IBootControl/default is deprecated; requires at least 1.1
+android.hardware.boot@1.0::IBootControl/default is deprecated; requires at least 1.1
+android.hardware.boot@1.0::IBootControl/default is deprecated; requires at least 1.1
+android.hardware.boot@1.0::IBootControl/default is deprecated; requires at least 1.1
+The following instances are in the device manifest but not specified in framework compatibility matrix: 
+    vendor.mediatek.hardware.camera.isphal@1.0::IISPModule/internal/0
+    vendor.xiaomi.hardware.citsensorservice@1.1::ICitSensorService/default
+    vendor.xiaomi.hardware.soterservice@1.0::ISoter/default
+Suggested fix:
+1. Update deprecated HALs to the latest version.
+2. Check for any typos in device manifest or framework compatibility matrices with FCM version >= 5.
+3. For new platform HALs, add them to any framework compatibility matrix with FCM version >= 5 where applicable.
+4. For device-specific HALs, add to DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE or DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE.: Success
 
-ld.lld: error: undefined symbol: _ZN7android4base10LogMessage6streamEv
->>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by libboot_control.cpp:83 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:83)
->>>               lto.tmp:(_ZN7android8bootable21LoadBootloaderControlERKNSt3__112basic_stringIcNS1_11char_traitsIcEE
-NS1_9allocatorIcEEEEP18bootloader_control)
->>> referenced 54 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base10LogMessageD1Ev
->>> referenced by boot_region_control.cpp:87 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:87)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by boot_region_control.cpp:84 (device/xiaomi/chopin/bootctrl/boot_region_control.cpp:84)
->>>               lto.tmp:(_ZN7android8bootable14BootControlExt17SetBootRegionSlotEj)
->>> referenced by boot_config.cpp:46 (system/core/fs_mgr/libfstab/boot_config.cpp:46)
->>>               lto.tmp:(_ZZN7android6fs_mgr15GetAndroidDtDirEvENK3$_0clEv)
->>> referenced 35 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base10WriteFullyENS0_11borrowed_fdEPKvm
->>> referenced by bootloader_message.cpp:128 (bootable/recovery/bootloader_message/bootloader_message.cpp:128)
->>>               lto.tmp:(_Z20write_misc_partitionPKvmRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIc
-EEEEmPS7_)
->>> referenced by libboot_control.cpp:108 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:108)
->>>               lto.tmp:(_ZN7android8bootable30UpdateAndSaveBootloaderControlERKNSt3__112basic_stringIcNS1_11char_t
-raitsIcEENS1_9allocatorIcEEEEP18bootloader_control)
-
-ld.lld: error: undefined symbol: _ZN7android4base12StringPrintfEPKcz
->>> referenced by bootloader_message.cpp:0 (bootable/recovery/bootloader_message/bootloader_message.cpp:0)
->>>               lto.tmp:(_Z20write_misc_partitionPKvmRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIc
-EEEEmPS7_)
->>> referenced by bootloader_message.cpp:79 (bootable/recovery/bootloader_message/bootloader_message.cpp:79)
->>>               lto.tmp:(_ZL15wait_for_deviceRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPS5_)
->>> referenced by bootloader_message.cpp:86 (bootable/recovery/bootloader_message/bootloader_message.cpp:86)
->>>               lto.tmp:(_ZL15wait_for_deviceRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPS5_)
->>> referenced 8 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base5SplitERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorI
-cEEEES9_
->>> referenced by boot_config.cpp:54 (system/core/fs_mgr/libfstab/boot_config.cpp:54)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
->>> referenced by fstab.cpp:546 (system/core/fs_mgr/libfstab/fstab.cpp:546)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
->>> referenced by fstab.cpp:123 (system/core/fs_mgr/libfstab/fstab.cpp:123)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
->>> referenced 7 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base4TrimINSt3__117basic_string_viewIcNS2_11char_traitsIcEEEEEENS2_12bas
-ic_stringIcS5_NS2_9allocatorIcEEEEOT_
->>> referenced by boot_config.cpp:56 (system/core/fs_mgr/libfstab/boot_config.cpp:56)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
->>> referenced by boot_config.cpp:62 (system/core/fs_mgr/libfstab/boot_config.cpp:62)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base8TokenizeERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocat
-orIcEEEES9_
->>> referenced by fstab.cpp:547 (system/core/fs_mgr/libfstab/fstab.cpp:547)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base10StartsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEEc
->>> referenced by fstab.cpp:550 (system/core/fs_mgr/libfstab/fstab.cpp:550)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base9HexStringEPKvm
->>> referenced by bootloader_message.cpp:354 (bootable/recovery/bootloader_message/bootloader_message.cpp:354)
->>>               lto.tmp:(_Z29CheckReservedSystemSpaceEmptyPbPNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9alloc
-atorIcEEEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base10StartsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_
->>> referenced by fstab.cpp:133 (system/core/fs_mgr/libfstab/fstab.cpp:133)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
->>> referenced by strings.h:133 (system/libbase/include/android-base/strings.h:133)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
->>> referenced by fstab.cpp:141 (system/core/fs_mgr/libfstab/fstab.cpp:141)
->>>               lto.tmp:(_ZN7android6fs_mgr20ParseFstabFromStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEbPNS1_6vectorINS0_10FstabEntryENS5_ISB_EEEE)
->>> referenced 25 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base8EndsWithENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_
->>> referenced by strings.h:141 (system/libbase/include/android-base/strings.h:141)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
->>> referenced by fstab.cpp:600 (system/core/fs_mgr/libfstab/fstab.cpp:600)
->>>               lto.tmp:(_ZN7android6fs_mgr20TransformFstabForDsuEPNSt3__16vectorINS0_10FstabEntryENS1_9allocatorIS
-3_EEEERKNS1_12basic_stringIcNS1_11char_traitsIcEENS4_IcEEEERKNS2_ISC_NS4_ISC_EEEE)
->>> referenced by strings.h:141 (system/libbase/include/android-base/strings.h:141)
->>>               lto.tmp:(_ZN7android6fs_mgr14GetBootDevicesEv)
-
-ld.lld: error: undefined symbol: _ZN7android4base13StringReplaceENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES
-5_S5_b
->>> referenced by boot_config.cpp:79 (system/core/fs_mgr/libfstab/boot_config.cpp:79)
->>>               lto.tmp:(_ZN7android6fs_mgr26ImportBootconfigFromStringERKNSt3__112basic_stringIcNS1_11char_traitsI
-cEENS1_9allocatorIcEEEERKNS1_8functionIFvS7_S7_EEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base11GetPropertyERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9all
-ocatorIcEEEES9_
->>> referenced by libboot_control.cpp:201 (hardware/interfaces/boot/1.1/default/boot_control/libboot_control.cpp:201)
->>>               lto.tmp:(_ZN7android8bootable11BootControl4InitEv)
->>> referenced by boot_config.cpp:188 (system/core/fs_mgr/libfstab/boot_config.cpp:188)
->>>               lto.tmp:(_Z22fs_mgr_get_boot_configRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
-PS5_)
-
-ld.lld: error: undefined symbol: _ZN7android4base16ReadFileToStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1
-_9allocatorIcEEEEPS7_b
->>> referenced by boot_config.cpp:101 (system/core/fs_mgr/libfstab/boot_config.cpp:101)
->>>               lto.tmp:(_ZN7android6fs_mgr16ImportBootconfigERKNSt3__18functionIFvNS1_12basic_stringIcNS1_11char_t
-raitsIcEENS1_9allocatorIcEEEES8_EEE)
->>> referenced by boot_config.cpp:107 (system/core/fs_mgr/libfstab/boot_config.cpp:107)
->>>               lto.tmp:(_ZN7android6fs_mgr13GetBootconfigERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9alloc
-atorIcEEEEPS7_)
->>> referenced by boot_config.cpp:157 (system/core/fs_mgr/libfstab/boot_config.cpp:157)
->>>               lto.tmp:(_ZN7android6fs_mgr19ImportKernelCmdlineERKNSt3__18functionIFvNS1_12basic_stringIcNS1_11cha
-r_traitsIcEENS1_9allocatorIcEEEES8_EEE)
->>> referenced 17 more times
-
-ld.lld: error: undefined symbol: _ZN7android4base14GetIntPropertyIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEE
-NS3_9allocatorIcEEEES2_S2_S2_
->>> referenced by fstab.cpp:681 (system/core/fs_mgr/libfstab/fstab.cpp:681)
->>>               lto.tmp:(_ZN7android6fs_mgr20EnableMandatoryFlagsEPNSt3__16vectorINS0_10FstabEntryENS1_9allocatorIS
-3_EEEE)
-
-ld.lld: error: undefined symbol: _ZN7android4base8BasenameENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE
->>> referenced by fstab.cpp:917 (system/core/fs_mgr/libfstab/fstab.cpp:917)
->>>               lto.tmp:(_ZN7android6fs_mgr19GetVerityDeviceNameERKNS0_10FstabEntryE)
-clang++: error: linker command failed with exit code 1 (use -v to see invocation)
-00:32:25 ninja failed with: exit status 1
-There were 2 actions that completed after the action that failed. See verbose.log.gz for their output.

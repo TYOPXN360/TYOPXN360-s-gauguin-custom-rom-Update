@@ -1,0 +1,197 @@
+    _    ____       _       _     
+   / \  |  _ \ __ _| |_ ___| |__  
+  / _ \ | |_) / _` | __/ __| '_ \ 
+ / ___ \|  __/ (_| | || (__| | | |
+/_/   \_\_|   \__,_|\__\___|_| |_|
+
+- Preparing image
+- Module size: 1.83 MB
+e2fsck 1.46.6 (1-Feb-2023)
+- Estimated minimum size of the filesystem: 102154
+e2fsck 1.46.6 (1-Feb-2023)
+- Target image size: 374.88 MB
+resize2fs 1.46.6 (1-Feb-2023)
+e2fsck 1.46.6 (1-Feb-2023)
+- Mounting image
+mount: mounting /dev/block/dm-1 on /vendor failed: Device or resource busy
+- Device is system-as-root
+Archive:  /data/user/0/me.bmax.apatch/cache/module.zip
+  inflating: module.prop
+***************
+ Monet-All 
+ by Jerry Zhou 
+***************
+*******************
+ Powered by APatch 
+*******************
+Archive:  /data/user/0/me.bmax.apatch/cache/module.zip
+  inflating: customize.sh
+- Extracting module files
+Archive:  /data/user/0/me.bmax.apatch/cache/module.zip
+  inflating: README.md
+  inflating: customize.sh
+  inflating: module.prop
+   creating: system/
+   creating: system/priv-app/
+  inflating: system/priv-app/cn.icyflame.unknown.apk
+  inflating: system/priv-app/cn.wps.moffice_eng.apk
+  inflating: system/priv-app/cn.wps.note.apk
+  inflating: system/priv-app/com.Jesse205.hellotool.apk
+  inflating: system/priv-app/com.aefyr.sai.apk
+  inflating: system/priv-app/com.android.systemui.apk
+  inflating: system/priv-app/com.apple.android.music.apk
+  inflating: system/priv-app/com.bilibili.app.in.apk
+  inflating: system/priv-app/com.caiyuninterpreter.activity.apk
+  inflating: system/priv-app/com.coolapk.market.apk
+  inflating: system/priv-app/com.douban.frodo.apk
+  inflating: system/priv-app/com.github.kr328.clash.apk
+  inflating: system/priv-app/com.github.kr328.clash.foss.apk
+  inflating: system/priv-app/com.github.metacubex.clash.meta.apk
+  inflating: system/priv-app/com.huanchengfly.tieba.post.apk
+  inflating: system/priv-app/com.jarstones.jizhang.apk
+  inflating: system/priv-app/com.jiongji.andriod.card.apk
+  inflating: system/priv-app/com.liuzho.file.explorer.apk
+  inflating: system/priv-app/com.miui.player.apk
+  inflating: system/priv-app/com.modosa.apkinstaller.apk
+  inflating: system/priv-app/com.modosa.rootinstaller.apk
+  inflating: system/priv-app/com.mojitec.mojidict.apk
+  inflating: system/priv-app/com.mutangtech.qianji.apk
+  inflating: system/priv-app/com.newskyer.draw.apk
+  inflating: system/priv-app/com.nowcasting.activity.apk
+  inflating: system/priv-app/com.omarea.vtools.apk
+  inflating: system/priv-app/com.realvnc.viewer.android.apk
+  inflating: system/priv-app/com.salt.music.apk
+  inflating: system/priv-app/com.sup.android.superb.apk
+  inflating: system/priv-app/com.taptap.apk
+  inflating: system/priv-app/com.tencent.androidqqmail.apk
+  inflating: system/priv-app/com.tencent.mm(Play).apk
+  inflating: system/priv-app/com.tencent.mm.apk
+  inflating: system/priv-app/com.tencent.weread.apk
+  inflating: system/priv-app/com.tencent.wetype.apk
+  inflating: system/priv-app/com.vmos.pro.apk
+  inflating: system/priv-app/com.wangc.bill.apk
+  inflating: system/priv-app/eu.thedarken.sdm.apk
+  inflating: system/priv-app/idm.internet.download.manager.apk
+  inflating: system/priv-app/idm.internet.download.manager.plus.apk
+  inflating: system/priv-app/io.github.forkmaintainers.iceraven.apk
+  inflating: system/priv-app/mark.via.apk
+  inflating: system/priv-app/me.gfuil.bmap.apk
+  inflating: system/priv-app/nutstore.android.apk
+  inflating: system/priv-app/org.mozilla.fenix.apk
+  inflating: system/priv-app/org.mozilla.firefox.apk
+  inflating: system/priv-app/tv.danmaku.bili.apk
+  inflating: system/priv-app/web1n.stopapp.apk
+  inflating: system/priv-app/x7890.shortcutcreator.apk
+请选择语言 / Please select language:
+—————————————————————————
+- 按音量键＋: 中文
+- Press Volume Down: English
+—————————————————————————
+已选择中文
+Monet-All v2.1
+by Jerry Zhou
+安装模块前请先确认模块适配的应用版本并阅读注意事项
+搞机不谨慎，救砖两行泪
+—————————————————————————————————————
+- 按音量键＋: 未确认模块适配的应用版本并阅读注意事项
+- 按音量键－: 已确认模块适配的应用版本并阅读注意事项
+—————————————————————————————————————
+已安装
+
+开始安装
+已安装 微信
+—————————————————————————
+按音量键＋: 安装 微信 莫奈取色
+按音量键－: 不安装 微信 莫奈取色
+—————————————————————————
+不安装 微信 莫奈取色
+已安装 酷安
+—————————————————————————
+按音量键＋: 安装 酷安 莫奈取色
+按音量键－: 不安装 酷安 莫奈取色
+—————————————————————————
+成功安装 酷安 莫奈取色
+未安装 微信输入法
+未安装 微信读书
+未安装 Apple Music
+未安装 哔哩哔哩
+未安装 哔哩哔哩国际版
+已安装 小横条
+—————————————————————————
+按音量键＋: 安装 小横条 莫奈取色
+按音量键－: 不安装 小横条 莫奈取色
+—————————————————————————
+不安装 小横条 莫奈取色
+未安装 Via
+未安装 豆瓣
+未安装 贴吧Lite
+未安装 Clash（Premium版）
+未安装 Clash（Foss版）
+未安装 Clash Meta
+已安装 Scene
+—————————————————————————
+按音量键＋: 安装 Scene 莫奈取色
+按音量键－: 不安装 Scene 莫奈取色
+—————————————————————————
+成功安装 Scene 莫奈取色
+未安装 皮皮虾
+未安装 MIUI音乐
+未安装 百词斩
+未安装 享做笔记
+已安装 TapTap
+—————————————————————————
+按音量键＋: 安装 TapTap 莫奈取色
+按音量键－: 不安装 TapTap 莫奈取色
+—————————————————————————
+不安装 TapTap 莫奈取色
+未安装 Firefox
+未安装 Firefox Nightly
+未安装 Iceraven
+未安装 随机Unknown
+未安装 SAI
+未安装 彩云小译
+未安装 一飞记账
+未安装 哈兔Box
+未安装 流舟文件
+未安装 安装狮
+未安装 安装狮-root
+未安装 彩云天气
+未安装 VNC Viewer
+未安装 QQ邮箱
+未安装 一木记账
+未安装 SD Maid
+未安装 IDM
+未安装 IDM+
+未安装 白马地图
+未安装 坚果云
+未安装 小黑屋
+未安装 创建快捷方式
+未安装 WPS Office
+未安装 WPS便签
+未安装 MOJI辞書
+未安装 钱迹
+未安装 椒盐音乐
+未安装 VMOS Pro
+
+—————————————————————————————————————
+- 按音量键＋: 安装修改版应用、独立应用和系统模块
+- 按音量键－: 不安装修改版应用、独立应用和系统模块
+—————————————————————————————————————
+不安装修改版应用、独立应用和系统模块
+
+—————————————————————————
+- 按音量键＋: 支持作者
+- 按音量键－: 不支持作者
+—————————————————————————
+不支持作者
+
+
+已安装下列应用的莫奈取色：
+酷安
+Scene
+
+安装完成
+说明文档：monet.jerryz.com.cn
+GitHub项目地址：github.com/YangguangZhou/Monet-All
+交流群：t.me/Monet_All
+- Done
